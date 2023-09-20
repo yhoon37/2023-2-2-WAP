@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title> 임영훈 </title>
+</head>
+<body>
+   <form method="get">
+      <fieldset>
+         <legend>Photo Details</legend>
+         <table>
+            <tbody>
+               <tr>
+                  <td colspan="2">
+                     <p>
+                        <label>Title<br></label>
+                        <input type="text" size="90"><br>
+                     </p>
+                     <p>
+                        <label>Description<br></label>
+                        <textarea cols="65" rows="7"></textarea>
+                     </p>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <p>
+                        <label>Continent<br></label>
+                        <select>
+                           <option>Choose continent</option>
+                           <option>Africa</option>
+                           <option>Asia</option>
+                           <option>Europe</option>
+                           <option>North America</option>
+                           <option>South America</option>
+                        </select>
+                     </p>
+                     <p>
+                        <label>County<br></label>
+                        <select>
+                           <option>Choose Country</option>
+                           <option>Canada</option>
+                           <option>Mexico</option>
+                           <option>United States</option>
+                        </select>
+                     </p>
+                     <p>
+                        <label>City<br></label>
+                        <input type="text" list="city" size="40">
+                        <datalist id="city">
+                           <option value="Calgary"></option>
+                           <option value="Montreal"></option>
+                           <option value="Toronto"></option>
+                           <option value="Vancouver"></option>
+                        </datalist>
+                     </p>
+                  </td>
+                  <td>
+                     <section>
+                        <label>Copyright?<br></label>
+                        <input type="radio" name="copyright">All rights reserved<br>
+                        <input type="radio" name="copyright" checked>Creative Commons
+                     </section>
+                     <section>
+                        <label>Creative Commons Types<br></label>
+                        <input type="checkbox" name="type" value="Attribution">Attribution<br>
+                        <input type="checkbox" name="type" value="Noncommercial">Noncommercial<br>
+                        <input type="checkbox" name="type" value="No Derivative Works">No Derivative Works<br>
+                        <input type="checkbox" name="type" value="Sahre Alike">Share Alike
+                     </section>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <label>I accept the software license</label>
+                     <input type="checkbox" name="accept">
+                     
+                  </td>
+                  
+               </tr>
+               <tr>
+                  <td>
+                     <p>
+                        <label>Rate this photo:<br></label>
+                        <input type="number" min="1" max="5" name="rate">
+                     </p>
+                     <p>
+                        <label>Color Collection:<br></label>
+                        <input type="color">
+                     </p>
+                  </td>
+                  <td>
+                     <p>
+                        <label>Date Taken:<br></label>
+                        <input type="date">
+                     </p>
+                     <p>
+                        <label>Time Taken:<br></label>
+                        <input type="time">
+                     </p>
+                  </td>
+               </tr>
+            </tbody>
+            
+            <tfoot>
+               <td>
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Clear Form">
+               </td>
+            </tfoot>
+
+         </table>
+      </fieldset>
+   </form>
+</body>
+</html>
